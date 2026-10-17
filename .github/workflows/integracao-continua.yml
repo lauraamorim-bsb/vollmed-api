@@ -24,7 +24,7 @@ jobs:
       run: sed -i 's|^FROM openjdk:17$|FROM eclipse-temurin:17-jdk|' Dockerfile
         
     - name: Roda Docker Compose
-      run: docker-compose up -d
+      run: docker compose up -d
 
     - name: Executa testes Unitarios
       run: mvn -B verify
