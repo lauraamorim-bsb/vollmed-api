@@ -17,7 +17,7 @@ jobs:
       uses: actions/java@v3
       with:
         java-version: '17'
-        distribution: 'temurin"
+        distribution: 'temurin'
         cache: maven
 
     - name: Configura Docker Compose
