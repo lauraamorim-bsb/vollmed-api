@@ -23,9 +23,6 @@ jobs:
     - name: Ajusta imagem Java para o build
       run: sed -i 's|^FROM openjdk:17$|FROM eclipse-temurin:17-jdk|' Dockerfile
         
-    - name: Inicia serviços
-      run: docker compose up -d
-
     - name: Roda Docker Compose
       run: docker-compose up -d
 
