@@ -38,4 +38,4 @@ jobs:
     - name: Build and analyze
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run: mvn soner:sonar -Dsonar.projectKey=lauraamorim-bsb_vollmed-api
+      run: mvn sonar:sonar -Dsonar.projectKey=lauraamorim-bsb_vollmed-api
